@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BigGrener</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>BigGrener Form</h2>
+        <form action="" class="BigGrener-form">
+          <div class="User">
+            <label for="UserName">User Name</label>
+            <input
+              type="text"
+              placeholder="UserName"
+              id="UserName"
+              name="UserName"
+              required
+            />
+          </div>
+          <div class="mail">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+              pattern="[^ @]*@[^ @]*"
+              required
+            />
+          </div>
+          <div class="pass">
+            <label for="password">password</label>
+            <input
+              type="password"
+              placeholder="password"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="favorite">
+            <label for="favColor">Select Your Favorite Color</label>
+            <select name="color" id="color-select" required>
+              <option value="" selected disabled>
+                Please Choose Your Option
+              </option>
+              <option value="Black">Black</option>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+            </select>
+          </div>
+          <div class="check">
+            <label for="agree">Agree to terms & conditions</label>
+            <input type="checkbox" name="agreement" id="agree" required />
+          </div>
+          <input type="submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
